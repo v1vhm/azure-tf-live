@@ -33,8 +33,7 @@ module "webserver_cluster" {
   db_remote_state_resource_group  = "v1vhm-rg-tfstate-prod-weu-001"
   db_remote_state_storage_account = "v1vhmsttfstateprodweu001"
   enable_autoscaling              = true
-  server_text                     = "Hello, production world!"
-  app_version                     = "003"
+  server_text                     = "Hello, production world v3.0!"
 
 
   custom_tags = {
