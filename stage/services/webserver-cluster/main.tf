@@ -26,7 +26,7 @@ terraform {
 }
 
 module "webserver_cluster" {
-  source                          = "../../../modules/services/webserver-cluster"
+  source                          = "../../../../azure-tf-modules/services/webserver-cluster"
   cluster_name                    = "webserver"
   environment                     = "stage"
   db_remote_state_key             = "stage/data-stores/mysql/terraform.tfstate"
