@@ -32,6 +32,7 @@ module "webserver_cluster" {
   db_remote_state_key             = "prod/data-stores/mysql/terraform.tfstate"
   db_remote_state_resource_group  = "v1vhm-rg-tfstate-prod-weu-001"
   db_remote_state_storage_account = "v1vhmsttfstateprodweu001"
+  enable_autoscaling              = true
   custom_tags = {
     Owner     = "team-foo"
     ManagedBy = "terraform"
