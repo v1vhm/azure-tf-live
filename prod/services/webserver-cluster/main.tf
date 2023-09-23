@@ -26,7 +26,7 @@ terraform {
 }
 
 module "webserver_cluster" {
-  source                          = "../../../modules/services/webserver-cluster"
+  source                          = "git@github.com:mattv1vhm/azure-tf-modules.git//services/webserver-cluster?ref=v0.0.1"
   cluster_name                    = "webserver"
   environment                     = "prod"
   db_remote_state_key             = "prod/data-stores/mysql/terraform.tfstate"
